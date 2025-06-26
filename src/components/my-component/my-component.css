@@ -1,0 +1,12 @@
+:host {
+  display: block;
+  background-color: pink;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid darkblue;
+}
+
+div {
+  color: darkblue;
+  font-weight: bold;
+}
