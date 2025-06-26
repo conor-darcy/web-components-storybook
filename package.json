@@ -4,7 +4,8 @@
   "private": true,
   "scripts": {
     "start": "stencil build --dev --watch --serve",
-    "storybook": "storybook dev -p 6006"
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build"
   },
   "devDependencies": {
     "@stencil/core": "^4.20.0",
