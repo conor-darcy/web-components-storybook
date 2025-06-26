@@ -1,5 +1,8 @@
 import type { Preview } from "@storybook/web-components";
 
+// Import the Stencil components
+import "../www/build/mycomponents.esm.js";
+
 const preview: Preview = {
   parameters: {
     actions: { argTypesRegex: "^on[A-Z].*" },
