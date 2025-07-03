@@ -2,11 +2,13 @@
   "name": "stencil-storybook-starter",
   "version": "0.0.1",
   "private": true,
+  "type": "module",
   "scripts": {
     "start": "stencil build --dev --watch --serve",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "stencil build && storybook build",
-    "serve-storybook": "npx serve storybook-static -p 8080"
+    "serve-storybook": "npx serve storybook-static -p 8080",
+    "sync-figma-to-tokens": "npx tsx src/tokens/sync_figma_to_tokens.ts -- --output dist/tokens/dtcg"
   },
   "devDependencies": {
     "@stencil/core": "^4.20.0",
@@ -15,7 +17,10 @@
     "@storybook/addon-interactions": "^8.6.14",
     "@storybook/addon-links": "^8.6.14",
     "@storybook/web-components-vite": "^8.0.0",
+    "@types/node": "^24.0.4",
+    "dotenv": "^16.6.0",
     "lit": "^3.1.0",
+    "style-dictionary": "^5.0.0",
     "typescript": "^5.4.5"
   }
 }
